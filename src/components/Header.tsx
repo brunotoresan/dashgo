@@ -25,7 +25,7 @@ export function Header(){
 
 			{/* since we will have an icon and an input, the best way
 			    is to make the element that wraps them looks like an input
-					to users click. The div is a label because if the persons clicks
+					for users to click. The div is a label because if the persons clicks
 					in the icon the input will also receive focus  */}
 			<Flex
 				as="label"
