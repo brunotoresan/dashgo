@@ -2,6 +2,7 @@ import { createServer, Factory, Model, Response } from 'miragejs'
 import faker from 'faker'
 
 type User = {
+  id: string
   name: string
   email: string
   created_at: string
@@ -54,6 +55,7 @@ export function makeServer() {
         )
       });
 
+      this.get('/users/:id');
       this.post('/users');
 
       this.namespace = ''
